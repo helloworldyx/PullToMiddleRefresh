@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/ll_loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.nope.hyx.pulltomiddlerefresh.view.BallLoadingView
+            android:id="@+id/ball_loading_view"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="8dip"
+            android:alpha="0" />
+
+        <TextView
+            android:id="@+id/tv_loading_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            tools:alpha="100"
+            android:gravity="center"
+            android:text="下拉即可刷新"
+            android:textColor="@color/black_b"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_complete_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        tools:alpha="1">
+
+        <ImageView
+            android:id="@+id/iv_complete_bg"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/red_f"/>
+
+        <TextView
+            android:id="@+id/tv_complete_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="为您推荐了10篇新"
+            android:textColor="@color/red_b"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</merge>
